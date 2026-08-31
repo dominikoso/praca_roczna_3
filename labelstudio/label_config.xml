@@ -1,0 +1,70 @@
+<View>
+  <Header value="Fragment do anotacji" />
+  <Text name="text" value="$text" />
+
+  <Header value="Metadane (tylko podgląd)" />
+  <Text name="meta_speaker" value="Mówca: $speaker" />
+  <Text name="meta_topic" value="Temat: $topic" />
+
+  <Header value="Czy fragment w ogóle zawiera technikę perswazyjną?" />
+  <Choices name="contains_technique" toName="text" choice="single" required="true">
+    <Choice value="tak" />
+    <Choice value="nie" />
+  </Choices>
+
+  <Header value="Atak na reputację (Attack on reputation)" />
+  <Choices name="attack_on_reputation" toName="text" choice="multiple">
+    <Choice value="Name Calling or Labelling" />
+    <Choice value="Guilt by Association" />
+    <Choice value="Casting Doubt" />
+    <Choice value="Appeal to Hypocrisy" />
+    <Choice value="Questioning the Reputation" />
+  </Choices>
+
+  <Header value="Uzasadnienie (Justification)" />
+  <Choices name="justification" toName="text" choice="multiple">
+    <Choice value="Flag Waving" />
+    <Choice value="Appeal to Authority" />
+    <Choice value="Appeal to Popularity" />
+    <Choice value="Appeal to Values" />
+    <Choice value="Appeal to Fear, Prejudice" />
+  </Choices>
+
+  <Header value="Uproszczenie (Simplification)" />
+  <Choices name="simplification" toName="text" choice="multiple">
+    <Choice value="Causal Oversimplification" />
+    <Choice value="False Dilemma or No Choice" />
+    <Choice value="Consequential Oversimplification" />
+  </Choices>
+
+  <Header value="Odwrócenie uwagi (Distraction)" />
+  <Choices name="distraction" toName="text" choice="multiple">
+    <Choice value="Strawman" />
+    <Choice value="Red Herring" />
+    <Choice value="Whataboutism" />
+  </Choices>
+
+  <Header value="Wezwanie (Call)" />
+  <Choices name="call" toName="text" choice="multiple">
+    <Choice value="Slogans" />
+    <Choice value="Conversation Killer" />
+    <Choice value="Appeal to Time" />
+  </Choices>
+
+  <Header value="Manipulacyjne słownictwo (Manipulative wording)" />
+  <Choices name="manipulative_wording" toName="text" choice="multiple">
+    <Choice value="Loaded Language" />
+    <Choice value="Obfuscation, Intentional Vagueness, Confusion" />
+    <Choice value="Exaggeration or Minimisation" />
+    <Choice value="Repetition" />
+  </Choices>
+
+  <Header value="Nowe w BSNLP 2025 (bez przypisanej kategorii)" />
+  <Choices name="new_2025" toName="text" choice="multiple">
+    <Choice value="Appeal to Pity" />
+    <Choice value="False Equivalence" />
+  </Choices>
+
+  <Header value="Notatka własna (opcjonalnie)" />
+  <TextArea name="notes" toName="text" placeholder="Dlaczego wybrałeś/aś te etykiety? Co było niejednoznaczne?" rows="2" />
+</View>

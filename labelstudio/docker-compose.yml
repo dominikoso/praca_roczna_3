@@ -1,0 +1,12 @@
+services:
+  labelstudio:
+    image: heartexlabs/label-studio:latest
+    container_name: praca-roczna-labelstudio
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ls_data:/label-studio/data
+
+volumes:
+  ls_data:
