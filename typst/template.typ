@@ -118,7 +118,7 @@
       na kierunku studiów #field-of-study
     ]
 
-    #v(3cm)
+    #v(2cm)
 
     // Supervisor
     #text(size: 12pt)[
